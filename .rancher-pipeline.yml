@@ -2,7 +2,7 @@ stages:
 - name: test1
   steps:
   - runScriptConfig:
-      image: ubuntu
+      image: ubuntu:18.04
       shellScript: |
         apt-get update
         apt-get install -y nodejs npm
