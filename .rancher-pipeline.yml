@@ -11,3 +11,4 @@ stages:
         sleep 10
         which vamp
         vamp --version
+notification: {}
