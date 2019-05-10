@@ -8,5 +8,5 @@ stages:
         apt-get install -y nodejs npm
         npm install -g vamp-cli-ee
         sleep 10
-        echo -V | $(which vamp)
+        $(which vamp) -V
 notification: {}
