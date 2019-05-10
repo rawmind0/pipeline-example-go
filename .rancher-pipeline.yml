@@ -3,11 +3,11 @@ stages:
   steps:
   - runScriptConfig:
       image: ubuntu
-      isShell: true
-      shellScript: |-
+      shellScript: |
         apt-get update
         apt-get install -y nodejs npm
         npm install -g vamp-cli-ee
         sleep 10
         $(which vamp) --version
+        ls
 notification: {}
